@@ -1,0 +1,11 @@
+<%= form_tag do_login_path do %>
+  <fieldset>
+    <%= label_tag 'name_or_email' %>
+    <%= text_field_tag 'name_or_email' %>
+    <%= label_tag 'password' %>
+    <%= password_field_tag 'password' %>
+  </fieldset>
+  <%= submit_tag 'Log In' %>
+<% end %>
+
+<%= oauth %>

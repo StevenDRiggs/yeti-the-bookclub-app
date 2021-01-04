@@ -1,0 +1,35 @@
+<%= form_for object_ do |f| %>
+  <fieldset>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+
+    <br><br>
+
+    <%= f.label :synopsis %><br>
+    <%= f.text_area :synopsis %>
+
+    <hr>
+
+    <%= f.label :authors %><br>
+    <%= f.collection_check_boxes :author_ids, Author.all, :id, :name %>
+
+    <br>
+
+    <%= f.fields_for :authors, object_.authors.build do |authors_fields| %>
+      <%= authors_fields.text_field :name %>
+    <% end %>
+
+    <br><br>
+
+    <%= f.label :genres %><br>
+    <%= f.collection_check_boxes :genre_ids, Genre.all, :id, :name %>
+
+    <br>
+
+    <%= f.fields_for :genres, object_.genres.build do |genres_fields| %>
+      <%= genres_fields.text_field :name %>
+    <% end %>
+  </fieldset>
+
+  <%= f.submit %>
+<% end %>

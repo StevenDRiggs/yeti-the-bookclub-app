@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yeti</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <%= profile %>
+    </header>
+
+    <h1>YETI</h1>
+    <h2><i>The Book Club App</i></h2>
+    <h3>See What's Popular</h3>
+    <p>
+      <%= link_to 'Authors', popular_authors_path %>
+      <%= link_to 'Books', popular_books_path %>
+      <%= link_to 'Genres', popular_genres_path %>
+    </p>
+
+    <%= flashed %>
+    <%= yield %>
+
+    <footer>
+      <%= logout_button %>
+    </footer>
+  </body>
+</html>

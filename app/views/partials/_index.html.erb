@@ -1,0 +1,5 @@
+<%= index(objects) %>
+
+<% unless group == 'user' %>
+  <%= button_to 'New', new_path(group), method: :get %>
+<% end %>

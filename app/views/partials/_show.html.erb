@@ -1,0 +1,13 @@
+<h2><%= obj.name %></h2>
+
+<%= link_to 'Edit', edit_path(obj) %>
+
+<%= display_associations(obj) %>
+
+<%= display_attributes(obj) %>
+
+<%= favorite(obj) %>
+
+<%= notes(obj) %>
+
+<%= button_to 'Delete', delete_path(obj), method: :get %>
