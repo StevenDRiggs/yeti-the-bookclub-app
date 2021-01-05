@@ -1,11 +1,11 @@
 # Yeti The Bookclub App
 
-![GitHub repo size](https://img.shields.io/github/repo-size/StevenDRiggs/featured-projects)
-![GitHub contributors](https://img.shields.io/github/contributors/StevenDRiggs/featured-projects)
-![GitHub stars](https://img.shields.io/github/stars/StevenDRiggs/featured-projects)
-![GitHub forks](https://img.shields.io/github/forks/StevenDRiggs/featured-projects)
+![GitHub repo size](https://img.shields.io/github/repo-size/StevenDRiggs/yeti-the-bookclub-app)
+![GitHub contributors](https://img.shields.io/github/contributors/StevenDRiggs/yeti-the-bookclub-app)
+![GitHub stars](https://img.shields.io/github/stars/StevenDRiggs/yeti-the-bookclub-app)
+![GitHub forks](https://img.shields.io/github/forks/StevenDRiggs/yeti-the-bookclub-app)
 
-Yeti is a nice way to keep track of your favorite books, authors and genres.  Users can add notes about each of their favorited items, view then most popular items, and see the details of anything.
+Yeti is a nice way to keep track of your favorite books, authors and genres.  Users can add notes about each of their favorited items, view the most popular items, and see the details of anything.
 
 ## Using Yeti
 
