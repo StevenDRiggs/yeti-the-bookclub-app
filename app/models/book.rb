@@ -14,6 +14,6 @@ class Book < ApplicationRecord
   validates :name, presence: true
 
   scope :popular, -> {
-    joins(:favorite_books).group(:name).order('COUNT(books.name) DESC').order(name: :asc)
+    joins(:favorite_books).group(:id).order('COUNT(books.name) DESC').order(name: :asc)
   }
 end
