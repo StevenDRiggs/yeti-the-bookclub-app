@@ -202,7 +202,7 @@ module ApplicationHelper
   def render_popular(popular)
     html = '<ul>'
     popular.each do |object_|
-      html << "<li>#{object_.name} (#{pluralize(popular.count[object_.name], 'favorite')})</li>"
+      html << "<li>#{object_.name} (#{pluralize(popular.count[object_.id], 'favorite')})</li>"
     end
     html << '</ul>'
 
